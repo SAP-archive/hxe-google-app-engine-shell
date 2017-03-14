@@ -26,6 +26,7 @@
   "homepage": "https://github.com/ccmehil/sapdevs_sample_1#readme",
   "dependencies": {
     "async": "^2.1.5",
+    "express": "^4.15.2",
     "hdb": "^0.12.1"
   }
 }
