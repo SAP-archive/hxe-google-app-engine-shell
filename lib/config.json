@@ -1,0 +1,7 @@
+{
+  "host": "db1.sapdevs.info",
+  "port": 30041,
+  "user": "CODEJAMMER",
+  "dbn" : "DB1",
+  "password": "CodeJam2017"
+} 

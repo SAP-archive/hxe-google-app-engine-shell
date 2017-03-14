@@ -1,0 +1,31 @@
+{
+  "name": "sapdevs_sample_1",
+  "version": "1.0.0",
+  "description": "Sample Node application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "monitor": "nodemon app.js",
+    "deploy": "gcloud app deploy app.yaml",
+    "test": "mocha test/index.js -t 30000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccmehil/sapdevs_sample_1.git"
+  },
+  "keywords": [
+    "sample",
+    "demo",
+    "hdb"
+  ],
+  "author": "Craig Cmehil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ccmehil/sapdevs_sample_1/issues"
+  },
+  "homepage": "https://github.com/ccmehil/sapdevs_sample_1#readme",
+  "dependencies": {
+    "async": "^2.1.5",
+    "hdb": "^0.12.1"
+  }
+}
