@@ -1,6 +1,7 @@
 {
-  "host": "52.1.35.56",
+  "host": "xx.xx.xx.xx",
   "port": 30015,
-  "user": "d045495",
-  "password": "dragonKerik276"
+  "user": "xxxxxxx",
+  "database": "xxx",
+  "password": "xxxxxxxxxxx"
 } 

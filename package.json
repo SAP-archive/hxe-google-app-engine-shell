@@ -13,13 +13,20 @@
     "type": "git",
     "url": "git+https://github.com/ccmehil/sapdevs_sample_1.git"
   },
+  "license": "Apache-2.0",
   "keywords": [
-    "sample",
-    "demo",
-    "hdb"
+    "sap",
+    "hana",
+    "database",
+    "in-memory",
+    "hdb",
+    "express",
+    "google",
+    "app engine",
+    "gcp",
+    "gae"
   ],
   "author": "Craig Cmehil",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/ccmehil/sapdevs_sample_1/issues"
   },
