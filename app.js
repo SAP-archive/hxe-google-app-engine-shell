@@ -16,10 +16,15 @@
 var async = require('async');
 var hdb = require('hdb');
 var client = require('./lib/client');
-var sql_command = "";
+var sql_command = '';
+const lv_appversion = '0.0.1';
 
 const express = require('express');
 const app = express();
+app.use(express.static('public'));
+app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
+require('express-ws')(app);
 
 // [START hdb_client]
 function connect(cb) {
@@ -46,7 +51,22 @@ function executeSQL(cb) {
 // [END hdb_client]
 
 app.get('/', function (req, res) {
-  // Execute a SQL command to access the version of the SAP HANA server
+  // Execute a SQL command to access the version of the SAP HANA server and display in html page
+  sql_command = "SELECT VALUE FROM SYS.M_SYSTEM_OVERVIEW WHERE NAME = 'Version'";
+  async.waterfall([connect, executeSQL, disconnect], function (err, rows) {
+      client.end();
+      if (err) {
+          return console.error(err);
+      }
+      res.render('index', {
+        version: rows[0].VALUE,
+        app_version: lv_appversion
+      });
+  });
+})
+
+app.get('/version', function (req, res) {
+  // Execute a SQL command to access the version of the SAP HANA server and display in terminal
   sql_command = "SELECT VALUE FROM SYS.M_SYSTEM_OVERVIEW WHERE NAME = 'Version'";
   async.waterfall([connect, executeSQL, disconnect], function (err, rows) {
       client.end();

@@ -1,7 +1,7 @@
 {
-  "name": "sapdevs_sample_1",
-  "version": "1.0.0",
-  "description": "Sample Node application",
+  "name": "hxe-google-app-engine-shell",
+  "version": "0.0.1",
+  "description": "Sample Node application for use with SAP HANA express edition and the Google Cloud Platform",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ccmehil/sapdevs_sample_1.git"
+    "url": "git+https://github.com/SAP/hxe-google-app-engine-shell.git"
   },
   "license": "Apache-2.0",
   "keywords": [
@@ -28,9 +28,9 @@
   ],
   "author": "Craig Cmehil",
   "bugs": {
-    "url": "https://github.com/ccmehil/sapdevs_sample_1/issues"
+    "url": "https://github.com/SAP/hxe-google-app-engine-shell/issues"
   },
-  "homepage": "https://github.com/ccmehil/sapdevs_sample_1#readme",
+  "homepage": "https://github.com/SAP/hxe-google-app-engine-shell#readme",
   "dependencies": {
     "async": "^2.1.5",
     "express": "^4.15.2",
