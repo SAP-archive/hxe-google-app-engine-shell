@@ -1,3 +1,8 @@
+![](https://img.shields.io/badge/STATUS-NOT%20CURRENTLY%20MAINTAINED-red.svg?longCache=true&style=flat)
+
+# Important Notice
+This public repository is read-only and no longer maintained. For the latest sample code repositories, visit the [SAP Samples](https://github.com/SAP-samples) organization.
+
 # SAP Developers, Sample 1
 Sample application for GAE and HXE. This following example is a skeleton or shell for use in creating a Node.js based application for deploymenet on the Google App Engine with a connectivity to an [SAP HANA express edition server](https://console.cloud.google.com/launcher/details/sap-public/sap-hana-express?project=hana-express-cloud) running within the Google Cloud Platform, Compute Engine.
 
